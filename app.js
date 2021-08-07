@@ -55,3 +55,6 @@ db.collection("monuments")
 			}
 		});
 	});
+//update on console
+//db.collection("monuments").doc('id')
+//.update({name:<new name>})
