@@ -1,2 +1,3 @@
 # firebase-crud
-A basic CRUD operations on firebase
+A basic CRUD operations on firestore
+
