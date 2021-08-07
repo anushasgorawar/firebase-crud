@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+		<title>Monuments</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<h3 id="heading">Historical Monuments</h3>
+		<div id="content">
+			<form id="add-monument">
+				<input type="text" name="name" placeholder="Monument Name" />
+				<input type="text" name="city" placeholder="City" />
+				<button>Add</button>
+			</form>
+
+			<ul id="monuments-list"></ul>
+		</div>
+
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyC7jJLdPt4essXMX1KBlDRwe8Ht8Qef7M8",
+				authDomain: "city-guide-b8cf0.firebaseapp.com",
+				projectId: "city-guide-b8cf0",
+				storageBucket: "city-guide-b8cf0.appspot.com",
+				messagingSenderId: "572779046411",
+				appId: "1:572779046411:web:99301cacccb097a3c8090e",
+				measurementId: "G-J6J43TPKGR",
+			};
+			firebase.initializeApp(firebaseConfig);
+			const db = firebase.firestore();
+			db.settings({ timestampsInSnapshots: true });
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>
